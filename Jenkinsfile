@@ -5,10 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    credentialsId: 'github-ssh',
-                    url: 'git@github.com:yousafnosha-tech/adan-it-center.git'
-            }
-        }
+
+url: 'https://github.com/yousafnosha-tech/adan-it-center.git'        
 
         stage('Build') {
             steps {
