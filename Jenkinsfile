@@ -5,8 +5,9 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-
-url: 'https://github.com/yousafnosha-tech/adan-it-center.git'        
+                    url: 'https://github.com/yousafnosha-tech/adan-it-center.git'
+            }
+        }
 
         stage('Build') {
             steps {
